@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Müşteri Takip Sistemi
+	</title>
+
+	<style>
+
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Müşteri Takip Sistemi</h1>
+
+
+	<form id="form" action="/submit" method="post">
+
+
+		<div class="form-control">
+			<label for="credit-score" id="label-credit-score">
+				Kredi Skoru
+			</label>
+
+
+			<input type="text" id="credit-score" name="CreditScore"><br>
+		</div>
+
+	<div class="form-control">
+			<label for="geography" id="label-geography">
+				Ülke
+			</label>
+
+
+			<select name="Geography" id="geography">
+				<option value="Germany">Almanya</option>
+				<option value="France">Fransa</option>
+				<option value="Spain">
+					İspanya
+				</option>
+
+			</select>
+		</div>
+    <div class="form-control">
+			<label for="gender" id="label-gender">
+				Cinsiyet
+			</label>
+
+
+			<select name="Gender" id="gender">
+				<option value="Male">Erkek</option>
+				<option value="Female">Kadın</option>
+
+
+			</select>
+		</div>
+
+	<div class="form-control">
+			<label for="age" id="label-age">
+				Yaş
+			</label>
+
+
+			<input type="text" id="age" name="Age"><br>
+		</div>
+
+		<div class="form-control">
+			<label for="tenure" id="label-tenure">
+				Müşterimiz Olduğu Yıl Sayısı
+			</label>
+
+
+			<input type="text" id="tenure" name="Tenure"
+				 />
+		</div>
+
+		<div class="form-control">
+			<label for="balance" id="label-balance">
+				Bakiye
+			</label>
+
+
+			<input type="text" id="balance" name="Balance"
+				 />
+		</div>
+
+		<div class="form-control">
+			<label for="num-of-products" id="label-num-of-products">
+				Kullandığı Ürün Sayısı
+			</label>
+
+
+			<select name="NumOfProducts" id="num-of-products">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">
+					3
+				</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="has-cr-card" id="label-has-cr-card">
+				Kredi Kartı Var mı?
+			</label>
+
+
+			<select name="HasCrCard" id="has-cr-card">
+				<option value="1">Evet</option>
+				<option value="0">Hayır</option>
+
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="is-active-member" id="label-is-active-member">
+				Aktif Bir Müşteri mi?
+			</label>
+
+
+			<select name="IsActiveMember" id="is-active-member">
+				<option value="1">Evet</option>
+				<option value="0">Hayır</option>
+
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="estimated-salary" id="label-estimated-salary">
+				Tahmini Maaş
+			</label>
+
+
+			<input type="text" id="estimated-salary" name="EstimatedSalary"><br>
+		</div>
+
+
+
+
+		<div class="form-control">
+			<label for="satisfaction-score" id="label-satisfaction-score">
+				Memnuniyet Derecesi
+			</label>
+
+
+			<select name="Satisfaction Score" id="satisfaction-score">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+
+
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="card-type" id="label-card-type">
+				Kart Tipi
+			</label>
+
+
+			<select name="Card Type" id="card-type">
+				<option value="SILVER">Gümüş</option>
+				<option value="GOLD">Altın</option>
+				<option value="DIAMOND">Elmas</option>
+				<option value="PLATINUM">Platinyum</option>
+
+
+
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="point-earned" id="label-point-earned">
+				Sahip Olduğu Banka Puanı
+			</label>
+
+
+			<input type="text" id="point-earned" name="Point Earned"><br>
+		</div>
+
+
+
+		<button type="submit" value="submit">
+			Submit
+		</button>
+
+		<h4 style="color:black;">
+   {{ prediction_text }} </h4>
+	</form>
+
+</body>
+
+</html>
